@@ -17,8 +17,8 @@ Question:You are given an array arr[] of N integers including 0.
     Your Task:
     The task is to complete the function missingNumber() which returns the smallest positive missing number in the array.
 
-    Expected Time Complexity: O(N).
-    Expected Auxiliary Space: O(1).
+    Expected Time Complexity: O(NLogN).
+
 
     Constraints:
     1 <= N <= 106
@@ -46,3 +46,4 @@ def findMissingElement(arr,n):
 n=int(input())
 l=list(map(int,input().split()))
 print(findMissingElement(l,n))
+#Code is contributed by bsandeep137
