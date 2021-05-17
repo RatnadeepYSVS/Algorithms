@@ -33,3 +33,4 @@ k=sorted(list(map(int,input().split())))#Directly Sorting The Input List
 for i in range(0,n-1,2):#range(start value,end value,step value)format of range function in Python
     k[i],k[i+1]=k[i+1],k[i]#Swaping Elements
 print(k)
+#Code Contributed By RatnadeepYSVS
