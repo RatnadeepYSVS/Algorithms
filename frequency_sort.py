@@ -36,8 +36,8 @@ for _ in range(t):
     kk.sort(key=lambda x:[-x[0],x[1]]) #Custom Sort Function This Directly compares freq count of that element and also that corresponding element
     print(*[j for i,j in kk])
 """
-Time Complexity:-O(nlogn+n)
+Time Complexity:-O(nlogn)
 As Builtin Sort Complexity is O(nlogn) And For Three Other loops is 3*n neglecting constant it's n
-So Totally Time Complexity is O(nlogn+n)
+So Totally Time Complexity is O(nlogn+n) which is O(nlogn)
 """
 #Code Contributed By RatnadeepYSVS
