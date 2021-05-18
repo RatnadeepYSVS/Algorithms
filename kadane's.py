@@ -91,6 +91,7 @@ print(maxsum)
 # so we print 15 which is the maximum of all subarray sums
 #___
 #Time complexity:-O(N)
+k=int(input())
 x=list(map(int,input().split()))
 maxsum=cursum=x[0]#as mentioned above
 for i in x[1:]:
