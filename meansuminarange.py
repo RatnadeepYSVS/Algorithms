@@ -65,7 +65,19 @@ so List[r]-List[l-1]=10-1=9
 so mean is 9//3 which is 3
 Time Complexity:-O(N)
 """
-#Implementation
+#Implementation For 0 Based Indexing
+x,y=map(int,input().split())
+z=[int(i) for i in input().split()]
+prefixsum=[z[0]]
+for i in range(1,x):
+    prefixsum.append(prefixsum[i-1]+z[i])
+for i in range(y):
+    l,r=map(int,input().split())
+    if l==1:
+        print((prefixsum[r])//(r-l+1))
+    else:
+        print((prefixsum[r]-prefixsum[l-1])//(r-l+1))
+#Implementation For 1 Based Indexing 
 x,y=map(int,input().split())
 z=[int(i) for i in input().split()]
 prefixsum=[z[0]]
