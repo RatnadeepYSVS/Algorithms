@@ -46,21 +46,21 @@ r=right query
 We will access the l and r indexes to the prefix sum List
 and calculate the mean
 The Problem With this solution is if l==0 then we just need
-to divide l[r] with l-r+1(Mentioned Above)
+to divide l[r] with r-l+1(Mentioned Above)
 if l is a number other than 0 then we need to adjust l value to l-1
 and calculate the difference b/w List[r] and List[l-1]
 Let's Take An example 
 for the list let's take query number 2 which is 1,3 l=1,r=3
 value at index 1 is 3
 value at index 3 is 10
-so l-r+1==3 so
+so r-l+1==3 so
 so prefix[r]-prefix[l]=2 
 so the answer is 2(7//3) which is incorrect
 So the left query value must be adjusted to l-1
 l=1,r=3 
 so l-1=0 and List[l-1]=1
 so r=3   and List[r]=10
-so l-r+1=3
+so r-l+1=3
 so List[r]-List[l-1]=10-1=9
 so mean is 9//3 which is 3
 Time Complexity:-O(N)
@@ -73,7 +73,7 @@ for i in range(1,x):
     prefixsum.append(prefixsum[i-1]+z[i])
 for i in range(y):
     l,r=map(int,input().split())
-    if l==1:
+    if l==0:
         print((prefixsum[r])//(r-l+1))
     else:
         print((prefixsum[r]-prefixsum[l-1])//(r-l+1))
