@@ -45,8 +45,8 @@ for i in range(len(x)):
 	cursum=0
 	for j in range(i+1,len(x)):
 		cursum+=x[j]
-	z=max(maxsum,cursum)
-print(z)
+	maxsum=max(maxsum,cursum)
+print(maxsum)
 # Kadane's Algorithm
 # The basic idea of this Algorithm is first initialize cursum,maxsum to starting value of the list
 # Then Iterate a loop from rest of the elements
@@ -91,7 +91,8 @@ print(z)
 # so we print 15 which is the maximum of all subarray sums
 #___
 #Time complexity:-O(N)
-x=[-2,2,0,6,7]
+k=int(input())
+x=list(map(int,input().split()))
 maxsum=cursum=x[0]#as mentioned above
 for i in x[1:]:
     cursum=max(cursum+i,i)#checks whether computed cursum is greater than i if this happens it updates cursum to i
