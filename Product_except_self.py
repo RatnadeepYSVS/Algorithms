@@ -91,4 +91,4 @@ for i in range(size-1,0,-1):
 	left.insert(0,left[0]*elems[i])
 for i in range(size):
 	print(left[i]*left[size+i],end=" ")
-# Code Contributed by RatnadeepYSVS.
+# Code Contributed by RatnadeepYSVS..
