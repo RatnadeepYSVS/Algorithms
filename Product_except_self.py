@@ -22,7 +22,7 @@ print(*list(map(lambda x:product//x,elems)))#Divides Calculated Product With Ent
 The Problem With Above Code Is It Won't Work for Case 2 It Throws An Error So we Need To perform This Without Division Operation
 Approach 2:-
 The Idea Is We Take Left Elements Of Element in the main List and Compute Product and Store It in a List
-And Take Right Elements of ELement in main list And Compute Product and Store It List
+And Take Right Elements of ELement in main list And Compute Product and Store It in other List
 Multiplying These two Lists we get the o/p required.
 So What We Are Gonna Do Is:-
 1.Take Two Lists Left And Right.
@@ -91,4 +91,4 @@ for i in range(size-1,0,-1):
 	left.insert(0,left[0]*elems[i])
 for i in range(size):
 	print(left[i]*left[size+i],end=" ")
-# Code Contributed by RatnadeepYSVS..
+# Code Contributed by RatnadeepYSVS.
