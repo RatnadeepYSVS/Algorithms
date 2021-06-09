@@ -61,3 +61,4 @@ for i in range(n):
 	print(*(k[:i]+list(z[i])+k[:i][::-1]))#Printing Pattern Upto N rows
 for i in range(n-1,0,-1):
 	print(*(k[:i-1]+list(z[i-1])+k[:i-1][::-1]))#Printing Remaining Pattern
+#Code Contributed By RatnadeepYSVS.
