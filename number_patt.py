@@ -1,5 +1,5 @@
 """
-Problem:-Your Given A Number N.Based On This Number You Should Create A Matrix Shown Below Of Order 2*N-1.
+Problem:-You Are Given A Number N.Based On This Number You Should Create A Matrix Shown Below Of Order 2*N-1.
 I/p:-
 2
 O/p:-
