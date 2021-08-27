@@ -13,11 +13,11 @@ product of List is 120
 120//1 =120,120//2=60,120//3=40,120//4=30,120//5=24
 """
 #Implementation
-# from functools import reduce
-# x=int(input())#Size input
-# l=[int(i) for i in input().split()]#List Input
-# product=int(reduce(lambda x,y:x*y,l))#Calculating the product
-# print([product//i for i in l])#The product list
+from functools import reduce
+x=int(input())#Size input
+l=[int(i) for i in input().split()]#List Input
+product=int(reduce(lambda x,y:x*y,l))#Calculating the product
+print([product//i for i in l])#The product list
 """
 But the problem with above approach is that if the given list contains number 0.
 Then it fails because the product of entire list will be 0
@@ -71,16 +71,16 @@ so multiplying both lists we get:-
 so resultant_list=[120,60,40,30,24] which is equivalent o/p.
 """
 #Implementation
-# x=int(input())#Size input
-# l=[int(i) for i in input().split()]#List Input
-# left_list=[1]#storing left product values
-# right_list=[1]#storing right product values
-# for i in l[:x-1]:
-#     left_list.append(left_list[-1]*i)#calculating the left product values
-# rev=l[::-1]
-# for i in rev[:x-1]:
-#     right_list.append(right_list[-1]*i)#calculating the right product values
-# print([i*j for i,j in zip(left_list, right_list[::-1])])#resultant_list
+x=int(input())#Size input
+l=[int(i) for i in input().split()]#List Input
+left_list=[1]#storing left product values
+right_list=[1]#storing right product values
+for i in l[:x-1]:
+    left_list.append(left_list[-1]*i)#calculating the left product values
+rev=l[::-1]
+for i in rev[:x-1]:
+    right_list.append(right_list[-1]*i)#calculating the right product values
+print([i*j for i,j in zip(left_list, right_list[::-1])])#resultant_list
 #Implementation without right_list
 x=int(input())
 l=[int(i) for i in input().split()]
